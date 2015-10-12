@@ -57,8 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\800px-Chess_piece_-_Black_bishop.jpg" />
+    <Content Include="images\800px-Chess_piece_-_Black_rook.jpg" />
     <Content Include="images\ancientpaper.jpg" />
     <Content Include="images\chess-316658_1280.jpg" />
+    <Content Include="images\Chess_piece_-_Black_queen.jpg" />
     <Content Include="images\IMG_1392.JPG" />
     <Content Include="images\IMG_1649.JPG" />
     <Content Include="images\IMG_1652.JPG" />
