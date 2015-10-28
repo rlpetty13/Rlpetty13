@@ -2,20 +2,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Week5 Javascript</title>
-    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+   <!--- <link href="Styles/StyleSheet1.css" rel="stylesheet" />-->
+
+  
 </head>
 <body>
-    <h1>Mutliplication Table</h1>
+    <!---<h1>Mutliplication Table</h1>
     Enter the number for the base:
     <br />
     <input type="text" id="base" value="" size="5"/>
     <br />
     <br />
-    <button onclick="">Create Table</button>
-    
-    
-    
+    <button onclick="">Create Table</button>    
     <p id="result"></p>
+        -->
+            
+ 
+    <label>What is the size of your Rhombus?</label><br />
+    <input type="text" id="rHeight" value="5" size="5" />
+    <label>Choose color for Even position</label>
+    <select id="colorEven">
+
+        <option value="#0000FF">Blue</option>
+        <option value="#FF0000">Red</option>
+        <option value="#FF9900">Orange</option>
+
+    </select><br />
+
+    <label>What is the size of your Rhombus?</label><br />
+    <input type="text" id="rHeight" value="5" size="5" />
+    <label>Choose color for Even position</label>
+    <select id="colorOdd">
+
+        <option value="#FF33CC">Pink</option>
+        <option value="#33CC33">Green</option>
+        <option value="#CC00FF">Purple</option>
+
+    </select><br />
+
+    <label>Choose Symbol for Rhombus</label><br />
+    <input type="text" id="rHeight" value="5" size="5" />
+    <label>Choose color for Even position</label>
+    <select id="colorOdd">
+
+        <option value="*">*</option>
+        <option value="$">$</option>
+        <option value="&">&</option>
+
+    </select><br />
+
+    <button onclick="upRight(document.getElementById('rHeight').value,
+                             document.getElementById('colorEven').value,
+                             document.getElementById('colorOdd').value,
+                             document.getElementById('Symbol').value);">
+
+        Display Rhombus
+
+    </button>
+
+    <div id="upRight"> </div>
+
+    <script>
+
+        
+        var rHeight = 5;
+        var colorEven = "orange";
+        var colorOdd = "black";
+        var symbol = "*"
+
+        
+        upRight(rHeight, colorEven, colorOdd, symbol);
+        
+        
+        function upRight(pHeight, pColorOdd, pColorEven, pSymbol) {
+
+            var rLine = "";
+            for (i = 0; i < pHeight; i++) {
+
+                rLine += "<p>";
+                //create each line on the rhombus
+
+                for (j = 0; j <= i; j++) {
+
+                    if (j % 2)
+
+                        //even 
+
+                    rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+
+                    else 
+                        //odd
+
+                        rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+
+                }
+
+                rLine += "</p>"
+                console.log(rLine);
+
+            }
+
+            document.getElementById("upRight").innerHTML = rLine;
+        }
+
+    </script>
+           
 
 </body>
 </html>
