@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nov 9th</title>
+</head>
+<body>
+
+    <p id="p1">My Penguin</p>
+    <p>
+
+        <img id="Pen" src="http://searchengineland.com/figz/wp-content/seloads/2012/04/penguin.jpg" height="180" width="196"></p>
+    <p id="caption"></p>
+    <button id="javascript">Call Javascript</button>
+    
+    <p id="p2">Here comes the result of JS:</p>
+    <div>
+
+
+
+    </div>
+    <script>
+
+
+        document.getElementById("javascript").onclick = changeImage;
+
+        function changeImage() {
+
+            document.getElementById('Pen').src = "http://www.onlineprofitstrategy.com/wp-content/uploads/2013/03/google_penguin.png";
+
+            document.getElementById("caption").textContent = "Image changed with Javascript";
+
+
+
+            var listElements = document.getElementsByTagName("li");
+
+            for (i = 0; i < listElements.length; i++) {
+
+                listElements[i].textContent += " " + (i + 1);
+
+            }
+
+
+            //Another way to access Elements 
+
+            var list = document.getElementById("list");
+
+            for (var j = 0; j < list.childNodes.length; j++) {
+
+                list.childNodes[j].textContent += " - "; 
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <ul id="list">
+        <li>Example</li>
+        <li>Example</li>
+        <li>Example</li>
+        <li>Example</li>
+        <li>Example</li>
+    </ul>
+
+</body>
+</html>
