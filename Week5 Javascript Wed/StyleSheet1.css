@@ -1,8 +1,37 @@
 ﻿body {
-    color:dimgrey;
-}
+    color:orangered;
+    background-color:darkgray;
+    }
 
 .symbols {
 
     color:red;
+}
+
+.clear {
+
+    clear:both;
+}
+
+#upLeft{
+
+    float:left;
+    
+}
+
+#upRight{
+    float:left;
+    
+
+}
+
+#downLeft{
+    float:left;
+    text-align:right;
+}
+
+#downRight{
+
+    float:left;
+    
 }

@@ -2,7 +2,7 @@
 function displayRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     upRight(pHeight, pColorEven, pColorOdd, pSymbol);
     downRight(pHeight, pColorEven, pColorOdd, pSymbol);
-   upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+    upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
     downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
@@ -126,3 +126,36 @@ function downLeft(pHeight, pColorOdd, pColorEven, pSymbol) {
 
     document.getElementById("downLeft").innerHTML = rLine;
 }
+
+/*
+upLeft(5,"*","red","blue");
+function upLeft(pHeight, pSymbol, pColorEven,pColorOdd ){
+  var rLine = "";
+
+    for (i = 1; i <= pHeight; i++) {
+
+        rLine += "<p>";
+       
+        for (j = 0; j<pHeight-i; j++) {
+
+                rLine += "-";
+
+        }
+  
+
+        for (x = j; x < pHeight; x++) {
+
+            rLine += "*";
+
+        }
+
+       
+    }
+ rLine += "</p>";
+        console.log(rLine);
+
+    //document.getElementById("upLeft").innerHTML = rLine;
+}
+
+
+*/
